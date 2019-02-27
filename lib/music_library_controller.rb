@@ -75,7 +75,6 @@ def list_songs
      end
 
     def play_song
-      #list_songs
       puts "Which song number would you like to play?"
       user_input = gets.strip.to_i
       if user_input > 1 && user_input < user_input.size
