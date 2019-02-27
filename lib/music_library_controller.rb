@@ -80,7 +80,7 @@ def list_songs
       user_input = gets.strip.to_i
       if user_input > 1 && user_input < user_input.size
         song = Song.all.sort{ |a, b| a.name <=> b.name }[user_input - 1]
-      
+
       if song
         puts "Playing #{song.name} by #{song.artist.name}"
         end
