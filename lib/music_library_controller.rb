@@ -79,7 +79,7 @@ def list_songs
       puts "Which song number would you like to play?"
       user_input = gets.strip.to_i
       song = Song.all.sort{ |a, b| a.name <=> b.name }[user_input - 1]
-      binding.pry
+      #binding.pry
       if song
         puts "Playing #{song.name} by #{song.artist.name}"
       end
